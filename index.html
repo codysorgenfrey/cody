@@ -1,25 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Cody Sorgenfrey</title>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-LTRGL1Z2PN"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
+        function gtag() {
+            dataLayer.push(arguments);
+        }
         gtag('js', new Date());
 
         gtag('config', 'G-LTRGL1Z2PN');
     </script>
-    <script>
-        setTimeout(function () {
-            window.location.href = "https://behance.net/codysorgenfrey";
-        }, 500);
-    </script>
+    <meta charset="UTF-8">
+    <title>Cody Sorgenfrey</title>
 </head>
 
 <body>
+    <script>
+        gtag('event', 'page_redirect', {
+            'value': '1',
+            'event_callback': function () {
+                window.location.href = 'https://behance.net/codysorgenfrey';
+            },
+        });
+    </script>
     <p>If you are not redirected automatically, follow this <a href="https://behance.net/codysorgenfrey">link to my
             portfolio</a>.</p>
 </body>
